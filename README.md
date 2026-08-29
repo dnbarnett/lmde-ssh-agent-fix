@@ -125,7 +125,7 @@ tr '\0' '\n' < /proc/$(pgrep -f gnome-terminal-server | head -1)/environ | grep 
 | `uninstall.sh` | Reverts all changes. |
 | `files/ssh-auth-sock-fixup.desktop` | Autostart entry for the GUI-app leg. |
 
-Tested on LMDE 6 / Cinnamon with lightdm. Most of the diagnosis applies to other
+Tested on LMDE 7 (gigi) / Cinnamon with lightdm. Most of the diagnosis applies to other
 Debian-based Cinnamon and GNOME-adjacent desktops.
 
 ## License
