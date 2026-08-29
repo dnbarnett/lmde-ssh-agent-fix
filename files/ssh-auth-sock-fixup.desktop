@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Fix SSH_AUTH_SOCK
+Comment=Repoints SSH_AUTH_SOCK at the systemd ssh-agent socket after gnome-keyring clobbers it on login
+Exec=/bin/sh -c 'dbus-update-activation-environment --systemd SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/openssh_agent'
+NoDisplay=true
+X-GNOME-Autostart-Phase=Application
+X-GNOME-AutoRestart=false
